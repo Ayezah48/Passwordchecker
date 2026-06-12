@@ -1,0 +1,9 @@
+# Compiled binaries
+password_checker
+
+# Object files
+*.o
+
+# Temporary files
+*~
+*.swp
