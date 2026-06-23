@@ -1,16 +1,9 @@
-# Makefile for Password Strength Checker
+# Makefile for Python Password Strength Checker
 
-CXX = g++
-CXXFLAGS = -Wall -std=c++11
-TARGET = password_checker
+.PHONY: run clean
 
-all: $(TARGET)
-
-$(TARGET): main.cpp
-	$(CXX) $(CXXFLAGS) main.cpp -o $(TARGET)
+run:
+	python3 password_checker.py
 
 clean:
-	rm -f $(TARGET)
-
-run: all
-	./$(TARGET)
+	@echo "Nothing to clean for Python script."

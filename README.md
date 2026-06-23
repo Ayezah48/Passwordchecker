@@ -1,6 +1,6 @@
-# Password Strength Checker
+# Password Strength Checker (Python)
 
-A simple C++ command-line tool designed for Kali Linux to evaluate the strength of passwords based on standard security criteria.
+A simple Python command-line tool designed for Kali Linux to evaluate the strength of passwords based on standard security criteria.
 
 ## Features
 - Length check (minimum 8 characters)
@@ -10,36 +10,25 @@ A simple C++ command-line tool designed for Kali Linux to evaluate the strength 
 - Interactive session for checking multiple passwords
 
 ## Requirements
-- Kali Linux (or any Linux distribution with `g++`)
-- `g++` compiler
-- `make` utility
+- Python 3.x
+- Kali Linux (or any standard Linux distribution)
 
-## Installation & Compilation
+## Installation & Usage
 
-### Using Git
+### 1. Clone the repository
 ```bash
 git clone https://github.com/[your-username]/Password_Strength_Checker.git
 cd Password_Strength_Checker
 ```
 
-### Compiling with Makefile
-To compile the project, simply run:
+### 2. Run the Program
+You can run the script directly using Python:
 ```bash
-make
+python3 password_checker.py
 ```
 
-### Compiling manually with g++
-If you don't have `make` installed, you can compile manually:
-```bash
-g++ -Wall -std=c++11 main.cpp -o password_checker
-```
-
-## Running the Program
-After compilation, run the executable:
-```bash
-./password_checker
-```
-Or use the make run command:
+### 3. Using Makefile (Optional)
+If you prefer using `make`, you can run:
 ```bash
 make run
 ```
